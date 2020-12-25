@@ -1,0 +1,206 @@
+.activebar, .activenav{
+    display: flex !important;
+  }
+  
+  .navbarMain {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    box-shadow: 0px 0px 20px rgba(53, 106, 146, 0.16);
+    .navlogo {
+      padding: 20px;
+    }
+  
+    .navlist {
+      display: flex;
+      .navbar-list {
+        text-decoration: none;
+        color: black;
+        padding: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: 0.5s;
+      }
+      .navhover {
+        position: relative;
+        color: black;
+        padding: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover .pageshover {
+          transform: scaleY(1);
+        }
+      }
+      .pageshover {
+        display: flex;
+        width: max-content;
+        flex-direction: column;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: 0.6s;
+        position: absolute;
+        top: 92px;
+        left: 0px;
+        // background-color: yellow;
+        box-shadow: 0px 0px 20px rgba(53, 106, 146, 0.16);
+        a {
+          text-decoration: none;
+          color: black;
+          padding: 8px 35px 8px 24px;
+          transition: 0.5s;
+          &:hover {
+            color: white;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+    .navbar-btn {
+      padding: 20px;
+      .basket-icon {
+        a {
+          margin-right: 20px;
+          color: black;
+          text-decoration: none;
+          font-size: 18px;
+          i {
+            margin-top: 15px;
+          }
+          sup {
+            color: white;
+            background-color: $primary-color;
+            padding: 0px 6px;
+            border-radius: 50%;
+          }
+        }
+      }
+      .person-icon {
+        a {
+          margin-right: 20px;
+          color: black;
+          text-decoration: none;
+          font-size: 18px;
+          i {
+            margin-top: 15px;
+          }
+        }
+      }
+      .signin {
+        a {
+          color: white;
+          font-size: 20px;
+          font-family: unset;
+          padding: 0px 45px;
+          line-height: 50px;
+          background-color: $primary-color;
+          border-color: $primary-color;
+          font-weight: 500;
+          border-radius: 40px;
+          transition: 0.7s;
+          &:hover {
+            background-color: white;
+            color: $primary-color;
+          }
+        }
+      }
+      .bars {
+        .barsbtn {
+          font-size: 28px;
+          padding: 10px 45px;
+          cursor: pointer;
+          display: none;
+        }
+      }
+    }
+    .mobilenav {
+      background-color: $primary-color;
+      display: flex;
+      flex-direction: column;
+      display: none;
+      width: 80%;
+      padding: 10px 16px;
+      box-shadow: 0 26px 48px 0 rgba(0, 0, 0, 0.15);
+      position: absolute;
+      top: 62px;
+      .mobnav-list {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 5px 0px;
+      }
+      .mobhover {
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 5px 0px;
+        .mobnav-icon{
+          float: right;
+          margin-top: 5px;
+        }
+        .mobpages {
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+          display: none;
+          a {
+            text-decoration: none;
+            padding: 8px 35px 8px 24px;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .navlist {
+      .navbar-list,
+      .navhover {
+        padding: 30px 10px 30px 10px !important;
+        font-size: 15px !important;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    .navbar-btn {
+      padding: 0px !important;
+      .bars {
+        .barsbtn {
+          display: block !important;
+        }
+      }
+    }
+    .navlist {
+      .navbar-list,
+      .navhover {
+        display: none !important;
+      }
+    }
+  
+    .navbarMain {
+      padding: 5px 0px !important;
+      .navlogo {
+        padding: 0px !important;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 766px) {
+    .navbar-btn {
+      .basket-icon,
+      .person-icon,
+      .signin {
+        display: none !important;
+      }
+    }
+    .mobilenav{
+      top: 58px !important;
+    }
+  }
