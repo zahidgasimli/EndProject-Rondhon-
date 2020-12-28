@@ -1,0 +1,86 @@
+.search-address {
+    height: calc(100vh - 92px);
+    background-image: url("/assets/images/home/banner-bg-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .search-all {
+      padding-right: 160px;
+      .search-content {
+        .title {
+          font-size: 150px;
+          color: $price-color;
+          font-weight: 400;
+          // font-family: "Poppins", sans-serif;
+          margin: 0px;
+          span {
+            color: $primary-color;
+          }
+        }
+        p {
+          font-size: 30px;
+          font-weight: 500;
+          padding-bottom: 70px;
+        }
+      }
+      .search-restaurant {
+        .search-form {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #fff;
+          padding: 20px;
+          border-radius: 3px;
+          .input-box {
+            input {
+              height: 80px;
+              width: 475px;
+              background-color: $primary-color;
+              color: $white-color;
+              border: 0;
+              border-radius: 6px;
+              padding-left: 40px;
+              font-size: 18px;
+              &::placeholder {
+                color: $white-color;
+              }
+              &:focus {
+                outline: none;
+              }
+            }
+            .searchbtn {
+              border-radius: 6px;
+              border: none;
+              height: 80px;
+              padding: 0 46px;
+              background-color: $primary-color;
+              border-color: $primary-color;
+              color: $white-color;
+              font-size: 18px;
+              font-weight: 500;
+              transition: 0.5s;
+              &:hover {
+                color: $secondary-color;
+              }
+              &:focus {
+                outline: none;
+              }
+              .search-icon {
+                padding-right: 6px;
+              }
+            }
+          }
+          .item-2 {
+            margin: 0px 5px;
+            input {
+              width: 295px;
+            }
+          }
+        }
+      }
+    }
+  }

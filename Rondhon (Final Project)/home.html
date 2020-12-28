@@ -10,7 +10,7 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/sass/style.css">
+    <link rel="stylesheet" href="assets/scss/style.css">
 </head>
 
 <body>
@@ -101,20 +101,503 @@
     <!--Header End-->
     <!--Search Start-->
     <section class="search-address">
+        <div class="search-all">
+            <div class="search-content">
+                <h1 class="title">Pizza <span>Time!</span></h1>
+                <p>We Are Rondhon, Food Delivery Services</p>
+            </div>
+            <div class="search-restaurant">
+                <form action="#" class="search-form">
+                    <div class="input-box">
+                        <input type="text" placeholder="Type Place, City, Division">
+                    </div>
+                    <div class="input-box item-2">
+                        <input type="text" placeholder="Restaurant">
+                    </div>
+                    <div class="input-box">
+                        <button type="button" class="searchbtn">
+                            <i class="far fa-search search-icon"></i>
+                            Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Search End-->
+    <!--Offer Area Start-->
+    <section class="offer-area">
         <div class="container">
             <div class="row">
-                <div class="search-content">
-                    <h1 class="title">Pizza <span>Time!</span></h1>
-                    <p>We Are Rondhon, Food Delivery Services</p>
+                <div class="offer-info col-lg-4">
+                    <div class="offer-title">
+                        <img src="assets/images/home/title-shape-3.png" alt="">
+                        <h3 class="title">Special Offer</h3>
+                        <p>The Process of our service</p>
+                    </div>
+                    <div class="offer-text">
+                        <span>Best Service For Our Customer</span>
+                        <p>Cras gravida bibendum dolor eu varius. Morbi fermentum velit nisl, eget vehicula lorem.
+                        </p>
+                    </div>
                 </div>
-                <div class="search-restaurant">
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="offer-item">
+                        <div class="offer-image">
+                            <img class="offer-main-image" src="assets/images/home/offer-1.png" alt="">
+                            <div class="offer-discount">
+                                <img src="assets/images/home/offer-box-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="offer-about">
+                            <h4>For All "Salad Pizza"</h4>
+                            <span>Don’t Delay to Order</span>
+                            <div class="order-btn">
+                                <a href="#">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="offer-item">
+                        <div class="offer-image">
+                            <img class="offer-main-image" src="assets/images/home/offer-2.png" alt="">
+                            <div class="offer-discount">
+                                <img src="assets/images/home/offer-box-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="offer-about-2">
+                            <h4>For All "Tomato Pizza"</h4>
+                            <span>Don’t Delay to Order</span>
+                            <div class="order-btn">
+                                <a href="#">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </div>
     </section>
-    <!--Search End-->
-
+    <!--Offer Area End-->
+    <!--Discover Area Start-->
+    <!-- <section class="discover-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="discover-title">
+                        <img src="assets/images/home/title-shape-3.png" alt="">
+                        <h3 class="title">Discover Our Pizza</h3>
+                        <p>The Process of our service</p>
+                        <div class="discover-category">
+                            <a role="button" class="active">Italian</a>
+                            <a role="button">Cheesy</a>
+                            <a role="button">Fish & Seafood</a>
+                            <a role="button">Vegeterian</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="discover-item">
+                                <div class="discover-image">
+                                    <img src="assets/images/home/discover-1.png" alt="">
+                                    <span>Sale</span>
+                                </div>
+                                <div class="discover-content">
+                                    <h4 class="title">Marinara Pizza</h4>
+                                    <p>Vestibulum blandit viverra convallis. Pellentesque ligula urna.</p>
+                                    <div class="review-box">
+                                        <div class="rate-box">
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                        </div>
+                                        <div class="cm-box">
+                                            <button>25 CM</button>
+                                            <button class="large-cm">30 CM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discover-order">
+                                    <span>$15</span>
+                                    <a href="#">
+                                        <i class="fas fa-shopping-basket"></i>
+                                        Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="discover-item">
+                                <div class="discover-image">
+                                    <img src="assets/images/home/discover-2.png" alt="">
+                                    <span>Sale</span>
+                                </div>
+                                <div class="discover-content">
+                                    <h4 class="title">Marinara Pizza</h4>
+                                    <p>Vestibulum blandit viverra convallis. Pellentesque ligula urna.</p>
+                                    <div class="review-box">
+                                        <div class="rate-box">
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                        </div>
+                                        <div class="cm-box">
+                                            <button>25 CM</button>
+                                            <button class="large-cm">30 CM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discover-order">
+                                    <span>$14</span>
+                                    <a href="#">
+                                        <i class="fas fa-shopping-basket"></i>
+                                        Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="discover-item">
+                                <div class="discover-image">
+                                    <img src="assets/images/home/discover-3.png" alt="">
+                                    <span>Sale</span>
+                                </div>
+                                <div class="discover-content">
+                                    <h4 class="title">Marinara Pizza</h4>
+                                    <p>Vestibulum blandit viverra convallis. Pellentesque ligula urna.</p>
+                                    <div class="review-box">
+                                        <div class="rate-box">
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                        </div>
+                                        <div class="cm-box">
+                                            <button>25 CM</button>
+                                            <button class="large-cm">30 CM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discover-order">
+                                    <span>$16</span>
+                                    <a href="#">
+                                        <i class="fas fa-shopping-basket"></i>
+                                        Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="discover-item">
+                                <div class="discover-image">
+                                    <img src="assets/images/home/discover-4.png" alt="">
+                                    <span>Sale</span>
+                                </div>
+                                <div class="discover-content">
+                                    <h4 class="title">Marinara Pizza</h4>
+                                    <p>Vestibulum blandit viverra convallis. Pellentesque ligula urna.</p>
+                                    <div class="review-box">
+                                        <div class="rate-box">
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                        </div>
+                                        <div class="cm-box">
+                                            <button>25 CM</button>
+                                            <button class="large-cm">30 CM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discover-order">
+                                    <span>$15</span>
+                                    <a href="#">
+                                        <i class="fas fa-shopping-basket"></i>
+                                        Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="discover-item">
+                                <div class="discover-image">
+                                    <img src="assets/images/home/discover-5.png" alt="">
+                                    <span>Sale</span>
+                                </div>
+                                <div class="discover-content">
+                                    <h4 class="title">Marinara Pizza</h4>
+                                    <p>Vestibulum blandit viverra convallis. Pellentesque ligula urna.</p>
+                                    <div class="review-box">
+                                        <div class="rate-box">
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                        </div>
+                                        <div class="cm-box">
+                                            <button>25 CM</button>
+                                            <button class="large-cm">30 CM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discover-order">
+                                    <span>$14</span>
+                                    <a href="#">
+                                        <i class="fas fa-shopping-basket"></i>
+                                        Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="discover-item">
+                                <div class="discover-image">
+                                    <img src="assets/images/home/discover-6.png" alt="">
+                                    <span>Sale</span>
+                                </div>
+                                <div class="discover-content">
+                                    <h4 class="title">Marinara Pizza</h4>
+                                    <p>Vestibulum blandit viverra convallis. Pellentesque ligula urna.</p>
+                                    <div class="review-box">
+                                        <div class="rate-box">
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                            <i class="fas fa-star rate"></i>
+                                        </div>
+                                        <div class="cm-box">
+                                            <button>25 CM</button>
+                                            <button class="large-cm">30 CM</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discover-order">
+                                    <span>$16</span>
+                                    <a href="#">
+                                        <i class="fas fa-shopping-basket"></i>
+                                        Order Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--Discover Area End-->
+    <!--Services Area Start-->
+    <section class="services-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-9">
+                    <div class="services-item">
+                        <i class="fas fa-motorcycle"></i>
+                        <h3 class="title">Fast Delivery in 1 Hour</h3>
+                        <p>Vestibulum blandit viverra convallis. Pellentesque ligula urna.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-9">
+                    <div class="services-item">
+                        <i class="fas fa-mobile-android"></i>
+                        <h3 class="title">Amazing Mobile App</h3>
+                        <p>Vestibulum blandit viverra convallis. Pellentesque ligula urna.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-9">
+                    <div class="services-item">
+                        <i class="fas fa-map-marked"></i>
+                        <h3 class="title">Wide Coverage Map</h3>
+                        <p>Vestibulum blandit viverra convallis. Pellentesque ligula urna.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-9">
+                    <div class="services-item">
+                        <i class="fas fa-user-secret"></i>
+                        <h3 class="title">More Than 150 Couriers</h3>
+                        <p>Vestibulum blandit viverra convallis. Pellentesque ligula urna.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Services Area End-->
+    <!--Special Menu Area Start-->
+    <section class="special-menu-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="special-menu-title">
+                        <img src="assets/images/home/title-shape-3.png" alt="">
+                        <h3 class="title">Restaurant with Special Menu</h3>
+                        <p>All delicious pizza menu for pizza lovers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-8">
+                    <div class="special-menu-1">
+                        <h4 class="title">Tirolese Pizza</h4>
+                        <p>Vestibulum blandit viverra</p>
+                        <div class="special-menu-price">
+                            <div>
+                                <span>Small</span>
+                                <p>$20</p>
+                            </div>
+                            <div>
+                                <span>Medium</span>
+                                <p>$30</p>
+                            </div>
+                            <div>
+                                <span>Large</span>
+                                <p>$40</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">
+                            <i class="fas fa-shopping-basket"></i>
+                            Order Now
+                        </a>
+                        <div class="special-menu-image">
+                            <img src="assets/images/home/special-menu-thumb-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-8">
+                    <div class="special-menu-item">
+                        <div class="order-btn">
+                            <img src="assets/images/home/special-menu-2.png" alt="">
+                            <a href="#" class="btn">
+                                <i class="fas fa-shopping-basket"></i>
+                                Order Now
+                            </a>
+                        </div>
+                        <div class="special-menu-1 special-menu-2">
+                            <h4 class="title">Tirolese Pizza</h4>
+                            <p>Vestibulum blandit viverra</p>
+                            <div class="special-menu-price">
+                                <div>
+                                    <span>Small</span>
+                                    <p>$20</p>
+                                </div>
+                                <div>
+                                    <span>Medium</span>
+                                    <p>$30</p>
+                                </div>
+                                <div>
+                                    <span>Large</span>
+                                    <p>$40</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="special-menu-item">
+                        <div class="order-btn">
+                            <img src="assets/images/home/special-menu-3.png" alt="">
+                            <a href="#" class="btn">
+                                <i class="fas fa-shopping-basket"></i>
+                                Order Now
+                            </a>
+                        </div>
+                        <div class="special-menu-1 special-menu-2">
+                            <h4 class="title">Tirolese Pizza</h4>
+                            <p>Vestibulum blandit viverra</p>
+                            <div class="special-menu-price">
+                                <div>
+                                    <span>Small</span>
+                                    <p>$20</p>
+                                </div>
+                                <div>
+                                    <span>Medium</span>
+                                    <p>$30</p>
+                                </div>
+                                <div>
+                                    <span>Large</span>
+                                    <p>$40</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                    <div class="special-menu-1 special-menu-3">
+                        <h4 class="title">Tirolese Pizza</h4>
+                        <p>Cras eu elit congue, placerat dui ut, tincidunt nisl. Nulla leo elit,</p>
+                        <div class="special-menu-price">
+                            <div>
+                                <span>Small</span>
+                                <p>$20</p>
+                            </div>
+                            <div>
+                                <span>Medium</span>
+                                <p>$30</p>
+                            </div>
+                            <div>
+                                <span>Large</span>
+                                <p>$40</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">
+                            <i class="fas fa-shopping-basket"></i>
+                            Order Now
+                        </a>
+                        <div class="special-menu-image">
+                            <img src="assets/images/home/special-menu-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Special Menu Area End-->
+    <!--Download Area Start-->
+    <section class="download-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="download-item-content">
+                        <h3 class="title">Rondhon Now In Your Hand</h3>
+                        <p>Download! To Get This App Faster way To Order Food</p>
+                        <div class="download-store">
+                            <a href="#" class="download-ios">
+                                <img src="assets/images/home/store-1.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/home/store-2.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="mobile-screen">
+                        <img src="assets/images/home/Mobile-screen.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Download Area End-->
+    <!--Client Area Start-->
+    <section class="client-area">
+        <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
+    <!--Client Area End-->
     <!--Scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"

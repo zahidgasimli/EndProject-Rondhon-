@@ -1,0 +1,135 @@
+.offer-area {
+    background-color: rgb(253, 252, 252);
+    padding: 150px 0px;
+    .container {
+      .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .offer-info {
+          .offer-title {
+            .title {
+              font-family: "Vollkorn", serif;
+              font-size: 40px;
+              padding-top: 12px;
+              font-weight: 600;
+            }
+            p {
+              font-size: 20px;
+              line-height: 35px;
+              opacity: 0.7;
+            }
+          }
+          .offer-text {
+            span {
+              font-size: 24px;
+              font-weight: 600;
+              font-family: "Vollkorn", serif;
+              opacity: 0.7;
+            }
+            p {
+              font-size: 25px;
+              line-height: 35px;
+              opacity: 0.7;
+              padding-top: 14px;
+              font-weight: 400;
+            }
+          }
+        }
+        .offer-item {
+          box-shadow: 0 26px 48px 0 rgba(0, 0, 0, 0.15);
+          text-align: center;
+          border-radius: 60px;
+          overflow: hidden;
+          border-radius: 6px;
+          &:hover .offer-image .offer-main-image {
+            transform: scale(1.1);
+          }
+          .offer-image {
+            width: 100%;
+            padding: 40px 0 25px;
+            position: relative;
+            background-color: $white-color;
+            .offer-main-image {
+              transition: 0.5s;
+            }
+            .offer-discount {
+              position: absolute;
+              top: 35px;
+              right: 75px;
+            }
+          }
+          .offer-about {
+            border-radius: 3px;
+            background: $primary-color;
+            padding: 50px 0px;
+            display: flex;
+            flex-direction: column;
+            h4 {
+              font-size: 30px;
+              font-weight: 600;
+              color: #fff;
+              font-family: "Vollkorn", serif;
+            }
+            span {
+              font-size: 24px;
+              color: #fff;
+              opacity: 0.7;
+              font-family: "Vollkorn", serif;
+              padding-top: 22px;
+              padding-bottom: 28px;
+            }
+            .order-btn {
+              a {
+                text-decoration: none;
+                line-height: 50px;
+                padding: 15px 35px;
+                background-color: $white-color;
+                border-color: $white-color;
+                color: $primary-color;
+                border-radius: 40px;
+                font-size: 20px;
+                font-weight: 600;
+                font-family: "Vollkorn", serif;
+              }
+            }
+          }
+          .offer-about-2 {
+            border-radius: 3px;
+            background: $secondary-color;
+            padding: 50px 0px;
+            display: flex;
+            flex-direction: column;
+            h4 {
+              font-size: 30px;
+              font-weight: 600;
+              color: $white-color;
+              font-family: "Vollkorn", serif;
+            }
+            span {
+              font-size: 24px;
+              color: $white-color;
+              opacity: 0.7;
+              font-family: "Vollkorn", serif;
+              padding-top: 22px;
+              padding-bottom: 28px;
+            }
+            .order-btn {
+              a {
+                text-decoration: none;
+                line-height: 50px;
+                padding: 15px 35px;
+                background-color: $white-color;
+                border-color: $white-color;
+                color: $secondary-color;
+                border-radius: 40px;
+                font-size: 20px;
+                font-weight: 600;
+                font-family: "Vollkorn", serif;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

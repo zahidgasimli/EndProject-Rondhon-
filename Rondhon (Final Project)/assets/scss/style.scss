@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary-font: "Poppins", sans-serif;
+$primary-color: #f3212c;
+$secondary-color: #f7b614;
+$price-color: #afd522;
+$rate-color:rgb(253, 189, 71);
+$black-color: black;
+$white-color: white;
+$text-color: rgba(0, 0, 0, 0.5);
+
+@import "header";
+@import "banner";
+@import "offer";
+@import "discover";
+@import "media";
+@import "services";
+@import "special-menu";
+@import "download";
+@import "client";

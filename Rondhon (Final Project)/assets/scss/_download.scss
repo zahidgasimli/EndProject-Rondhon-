@@ -1,0 +1,47 @@
+.download-area {
+  background-image: url("/assets/images/home/download-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 32.5px;
+  height: 750px;
+  display: flex;
+  align-items: flex-end;
+  .download-item-content {
+    padding-top: 50px;
+    .title {
+      font-size: 50px;
+      font-weight: 600;
+      font-family: "Vollkorn", serif;
+      color: $white-color;
+      padding-right: 50px;
+      margin: 0px;
+    }
+    p{
+        color: $primary-color;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: "Vollkorn", serif;
+        line-height: 38px;
+        padding-right: 45px;
+        padding-bottom: 60px;
+        padding-top: 23px;
+        margin: 0px;
+    }
+    .download-store{
+        display: flex;
+        .download-ios{
+            margin-right: 25px;
+        }
+        img{
+            margin-bottom: 15px;
+        }
+    }
+  }
+  .mobile-screen{
+      text-align: center;
+      img{
+          max-width: 100%;
+      }
+  }
+}
